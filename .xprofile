@@ -1,0 +1,16 @@
+#!/bin/bash
+#
+# .xprofile
+# Sourced by GDM/KDM/LightDM/LXDM before window manager is launched.
+#
+
+#Host-specific config
+HOST=`hostname`
+[ -f ~/.xprofile-${HOST} ] && source ~/.xprofile-${HOST}
+
+#Don't beep
+xset b off
+
+#Map caps lock to esc
+setxkbmap -option caps:escape
+
