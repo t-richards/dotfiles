@@ -1,14 +1,12 @@
-# Compiled source
-*.com
+# Compiled objects
 *.class
+*.com
 *.dll
 *.exe
 *.o
 *.so
 
-# Packages
-# it's better to unpack these files and commit the raw source
-# git has its own built in compression methods
+# Archives
 *.7z
 *.dmg
 *.gz
@@ -24,9 +22,9 @@
 *.sqlite
 
 # OS generated files
+._*
 .DS_Store
 .DS_Store?
-._*
 .Spotlight-V100
 .Trashes
 ehthumbs.db
@@ -34,9 +32,14 @@ Thumbs.db
 
 # Development stuff
 .idea/
-node_modules/
-npm-debug.log
-bower_components/
 .sass-cache/
+*.bak
+*.iml
 *.map
 *.src.coffee
+bower_components/
+node_modules/
+npm-debug.log
+
+# Magento development stuff
+app/code/local/Tomrichards/

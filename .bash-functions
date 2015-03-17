@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+#Usage: apgsql
+function apgsql {
+    apg -a 1 -n 1 -m 25 -M NCL
+}
+
+#Usage: supertouch /path/to/filename/where/parent/directories/dont/exist.txt
+function supertouch {
+    if [ $# -lt 1 ]; then
+        echo "Missing argument";
+        return 1;
+    fi
+
+    for f in "$@"; do
+        mkdir -p -- "$(dirname -- "$f")"
+        touch -- "$f"
+    done
+}

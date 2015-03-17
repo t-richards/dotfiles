@@ -1,18 +1,29 @@
 # Tom's dotfiles
-This is a sampling of Tom's configuration files for various linux programs.
-You can install them using [modman](https://github.com/colinmollenhour/modman). For instance,
+These are some of my configuration files for various Linux programs.
+You can install them using [modman][1].
 
-```
-cd
-modman init
-modman clone https://github.com/t-richards/dotfiles
+# Getting started
+
+```bash
+# Go to your home directory
+$ cd
+
+# Create .modman directory
+$ modman init
+
+# Create symlinks for all files in this repository
+$ modman clone https://github.com/t-richards/dotfiles
 ```
 
 # Dependencies
-Various programs are referenced in these configs, through aliases or other means.
-The following Arch Linux packages should allow all configs to work properly:
+Various programs are referenced in these configs, through aliases or other
+means. The following [Arch Linux][2] packages should be installed for
+everything to work properly:
 
  * apg
  * mtr
- * neovim
+ * neovim-git
  * xorg-setxkbmap
+
+[1]: https://github.com/colinmollenhour/modman
+[2]: https://www.archlinux.org/
