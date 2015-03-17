@@ -5,6 +5,7 @@
 *.exe
 *.o
 *.so
+__pycache__
 
 # Archives
 *.7z
