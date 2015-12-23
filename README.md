@@ -22,7 +22,6 @@ everything to work properly:
 
  * apg
  * mtr
- * neovim-git
  * xorg-setxkbmap
 
 [1]: https://github.com/colinmollenhour/modman
