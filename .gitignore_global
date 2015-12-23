@@ -15,6 +15,7 @@ __pycache__
 *.jar
 *.rar
 *.tar
+*.xz
 *.zip
 
 # Logs and databases
@@ -41,6 +42,21 @@ Thumbs.db
 bower_components/
 node_modules/
 npm-debug.log
+tags
+.tags_swap
+
+# Vim
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+*.un~
+Session.vim
+.netrwhist
+*~
 
 # Magento development stuff
 app/code/local/Tomrichards/
+js/commercebug
+Tomrichards_Commercebug.xml
+Tomrichards_Commercebug-*.xml
+CB_LICENSE
+CB_README*

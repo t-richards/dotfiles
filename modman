@@ -2,6 +2,7 @@
 .bash-functions                .bash-functions
 .gitconfig                     .gitconfig
 .gitignore_global              .gitignore_global
+.hgrc                          .hgrc
 .vimrc                         .vimrc
 .vimrc                         .nvimrc
 .xprofile                      .xprofile

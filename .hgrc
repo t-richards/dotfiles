@@ -1,0 +1,10 @@
+# Mercurial Configuration
+# (see "hg help config" for more info)
+
+[ui]
+username = Tom Richards <tom@tomrichards.net>
+
+[extensions]
+pager =
+progress =
+color =

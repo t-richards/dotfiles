@@ -22,6 +22,8 @@ alias view='vim -R'
 alias sl="ls"
 alias gerp="grep"
 alias mtr='mtr -o "LSDR WBAV"'
+alias phpvld='php -d vld.active=1 -d vld.execute=0'
+alias ag='ag --silent'
 
 # Functions
 [ -f ~/.bash-functions ] && source ~/.bash-functions
