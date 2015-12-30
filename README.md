@@ -20,9 +20,10 @@ Various programs are referenced in these configs, through aliases or other
 means. The following [Arch Linux][2] packages should be installed for
 everything to work properly:
 
- * apg
- * mtr
- * xorg-setxkbmap
+ - apg
+ - mtr
+ - the_silver_searcher
+ - xorg-setxkbmap
 
 [1]: https://github.com/colinmollenhour/modman
 [2]: https://www.archlinux.org/
