@@ -45,3 +45,4 @@ export VISUAL=vim
 # Host-specific config
 HOST=`hostname`
 [ -f ~/.bashrc-${HOST} ] && source ~/.bashrc-${HOST}
+

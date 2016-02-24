@@ -21,7 +21,9 @@ means. The following [Arch Linux][2] packages should be installed for
 everything to work properly:
 
  - apg
+ - fzf
  - mtr
+ - neovim
  - the_silver_searcher
  - xorg-setxkbmap
 
