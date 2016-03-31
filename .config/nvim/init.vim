@@ -10,9 +10,12 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'gosukiwi/vim-atom-dark'
 
 " Languages
-Plug 'vim-ruby/vim-ruby'
-Plug 'tpope/vim-liquid'
 Plug 'cakebaker/scss-syntax.vim'
+Plug 'kchmck/vim-coffee-script'
+Plug 'shawncplus/phpcomplete.vim'
+Plug 'tpope/vim-liquid'
+Plug 'vim-ruby/vim-ruby'
+Plug 'tkztmk/vim-vala'
 
 " Productivity
 Plug 'Shougo/deoplete.nvim'
@@ -33,6 +36,10 @@ set mouse-=a
 
 colorscheme atom-dark-256
 
+let g:airline_left_sep = ""
+let g:airline_left_alt_sep = ""
+let g:airline_right_sep = ""
+let g:airline_right_alt_sep = ""
 let g:deoplete#enable_at_startup = 1
 
 nmap <unique> <Leader>t :FZF<CR>

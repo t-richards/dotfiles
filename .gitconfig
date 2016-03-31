@@ -1,12 +1,12 @@
 [user]
-	email = tom@tomrichards.net
 	name = Tom Richards
+	useconfigonly = true
 [alias]
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 [color]
 	ui = auto
 [core]
-	excludesfile = /home/tom/.gitignore_global
+	excludesfile = ~/.gitignore_global
 [merge]
 	ff = only
 [push]
