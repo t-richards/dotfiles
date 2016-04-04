@@ -11,11 +11,12 @@ Plug 'gosukiwi/vim-atom-dark'
 
 " Languages
 Plug 'cakebaker/scss-syntax.vim'
+Plug 'elixir-lang/vim-elixir'
 Plug 'kchmck/vim-coffee-script'
 Plug 'shawncplus/phpcomplete.vim'
+Plug 'tkztmk/vim-vala'
 Plug 'tpope/vim-liquid'
 Plug 'vim-ruby/vim-ruby'
-Plug 'tkztmk/vim-vala'
 
 " Productivity
 Plug 'Shougo/deoplete.nvim'
@@ -33,6 +34,7 @@ set nowrap
 set number
 set colorcolumn=81
 set mouse-=a
+set scrolloff=1
 
 colorscheme atom-dark-256
 
