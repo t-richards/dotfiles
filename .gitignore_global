@@ -53,10 +53,5 @@ Session.vim
 .netrwhist
 *~
 
-# Magento development stuff
-app/code/local/Tomrichards/
-js/commercebug
-Tomrichards_Commercebug.xml
-Tomrichards_Commercebug-*.xml
-CB_LICENSE
-CB_README*
+# Crash dumps
+*.dump
