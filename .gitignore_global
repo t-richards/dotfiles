@@ -33,6 +33,7 @@ ehthumbs.db
 Thumbs.db
 
 # Development stuff
+.bundle/
 .idea/
 .sass-cache/
 *.bak
