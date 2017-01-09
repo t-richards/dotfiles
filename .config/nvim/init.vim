@@ -19,7 +19,6 @@ Plug 'tpope/vim-liquid'
 Plug 'vim-ruby/vim-ruby'
 
 " Productivity
-Plug 'Shougo/deoplete.nvim'
 Plug 'airblade/vim-gitgutter'
 Plug 'junegunn/fzf'
 Plug 'tpope/vim-surround'

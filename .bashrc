@@ -4,9 +4,6 @@
 # Shell prompt
 PS1="\n\u@\[\e[1;$((31+ $(hostname | cksum | cut -c1-3) % 6))m\]\h\[\e[0m\]:\w\n$ "
 
-# Vi editing mode
-set -o vi
-
 # Append to the history file, don't overwrite it
 shopt -s histappend
 
@@ -17,8 +14,6 @@ alias dirs="dirs -v"
 
 # Other aliases
 alias ls="ls --color=auto"
-alias vi='vim'
-alias view='vim -R'
 alias sl="ls"
 alias gerp="grep"
 alias mtr='mtr -o "LSDR WBAV"'

@@ -43,7 +43,12 @@ Thumbs.db
 bower_components/
 node_modules/
 npm-debug.log
+
+# Ctags
 tags
+.tags
+TAGS
+.TAGS
 .tags_swap
 
 # Vim
