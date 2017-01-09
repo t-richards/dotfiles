@@ -1,6 +1,7 @@
 # Tom's dotfiles
+
 These are some of my configuration files for various Linux programs.
-You can install them using [modman][1].
+You can install them using [GNU Stow][stow].
 
 # Getting started
 
@@ -8,16 +9,18 @@ You can install them using [modman][1].
 # Go to your home directory
 $ cd
 
-# Create .modman directory
-$ modman init
+# Clone repo
+$ git clone https://github.com/t-richards/dotfiles
+$ cd dotfiles
 
 # Create symlinks for all files in this repository
-$ modman clone https://github.com/t-richards/dotfiles
+$ stow .
 ```
 
 # Dependencies
+
 Various programs are referenced in these configs, through aliases or other
-means. The following [Arch Linux][2] packages should be installed for
+means. The following [Arch Linux][archlinux] packages should be installed for
 everything to work properly:
 
  - apg
@@ -27,5 +30,5 @@ everything to work properly:
  - the_silver_searcher
  - xorg-setxkbmap
 
-[1]: https://github.com/colinmollenhour/modman
-[2]: https://www.archlinux.org/
+[stow]: https://www.gnu.org/software/stow/
+[archlinux]: https://www.archlinux.org/
