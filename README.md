@@ -10,7 +10,7 @@ You can install them using [GNU Stow][stow].
 $ cd
 
 # Clone repo
-$ git clone https://github.com/t-richards/dotfiles
+$ git clone https://github.com/t-richards/dotfiles.git
 $ cd dotfiles
 
 # Create symlinks for all files in this repository
