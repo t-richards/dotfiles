@@ -1,8 +1,0 @@
-.bashrc                        .bashrc
-.bash-functions                .bash-functions
-.config/nvim                   .config/nvim
-.gitconfig                     .gitconfig
-.gitignore_global              .gitignore_global
-.hgrc                          .hgrc
-.xprofile                      .xprofile
-
