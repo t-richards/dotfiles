@@ -20,11 +20,11 @@ alias mtr='mtr -o "LSDR WBAV"'
 alias phpvld='php -d vld.active=1 -d vld.execute=0'
 alias ag='ag --silent'
 
-# Functions
-[ -f ~/.bash-functions ] && source ~/.bash-functions
-
 # Allow sudo to use the above aliases
 alias sudo='sudo '
+
+# Functions
+[ -f ~/.bash-functions ] && source ~/.bash-functions
 
 # PATH += custom programs, python packages, system things
 PATH=~/bin:$PATH
@@ -33,11 +33,10 @@ PATH=$PATH:/usr/sbin
 PATH=$PATH:/sbin
 export PATH
 
-# Git, yaourt
+# Set default text editor for Git and other programs
 export EDITOR=vim
 export VISUAL=vim
 
 # Host-specific config
 HOST=`hostname`
 [ -f ~/.bashrc-${HOST} ] && source ~/.bashrc-${HOST}
-
