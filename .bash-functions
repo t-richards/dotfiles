@@ -5,6 +5,11 @@ function apgsql {
     apg -a 1 -n 1 -m 25 -M NCL
 }
 
+# Usage: apgstrong
+function apgstrong {
+    apg -a 1 -n 6 -m 32 -M SNCL -r /usr/share/dict/words
+}
+
 # Usage: supertouch /path/to/filename/where/parent/directories/dont/exist.txt
 function supertouch {
     if [ $# -lt 1 ]; then

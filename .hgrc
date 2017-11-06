@@ -8,4 +8,7 @@ username = Tom Richards <tom@tomrichards.net>
 pager =
 progress =
 color =
+hgext.bookmarks =
+hggit = 
 hgext.churn =
+

@@ -1,8 +1,17 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+# PATH += custom programs, python packages, system things
+PATH=~/bin:$PATH
+PATH=$PATH:~/.local/bin
+PATH=$PATH:/usr/sbin
+PATH=$PATH:/sbin
+export PATH
+
 # Shell prompt
-PS1="\n\u@\[\e[1;$((31+ $(hostname | cksum | cut -c1-3) % 6))m\]\h\[\e[0m\]:\w\n$ "
+#PS1="\n\u@\[\e[1;$((31+ $(hostname | cksum | cut -c1-3) % 6))m\]\h\[\e[0m\]:\w\n$ "
+#PS1="$ "
+PS1="\$(bashprompt)"
 
 # Append to the history file, don't overwrite it
 shopt -s histappend
@@ -25,13 +34,6 @@ alias sudo='sudo '
 
 # Functions
 [ -f ~/.bash-functions ] && source ~/.bash-functions
-
-# PATH += custom programs, python packages, system things
-PATH=~/bin:$PATH
-PATH=$PATH:~/.local/bin
-PATH=$PATH:/usr/sbin
-PATH=$PATH:/sbin
-export PATH
 
 # Set default text editor for Git and other programs
 export EDITOR=vim
