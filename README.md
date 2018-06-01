@@ -27,7 +27,6 @@ everything to work properly:
  - fzf
  - mtr
  - neovim
- - the_silver_searcher
  - xorg-setxkbmap
 
 [stow]: https://www.gnu.org/software/stow/

@@ -34,6 +34,7 @@ Thumbs.db
 .bundle/
 .idea/
 .sass-cache/
+.vscode/
 *.bak
 *.iml
 *.map

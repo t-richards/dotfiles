@@ -8,8 +8,4 @@
 	ui = auto
 [core]
 	excludesfile = ~/.gitignore_global
-[merge]
-	ff = only
-[push]
-	default = simple
 

@@ -9,12 +9,17 @@ PATH=$PATH:/sbin
 export PATH
 
 # Shell prompt
-#PS1="\n\u@\[\e[1;$((31+ $(hostname | cksum | cut -c1-3) % 6))m\]\h\[\e[0m\]:\w\n$ "
-#PS1="$ "
+#PS1="\n$ "
 PS1="\$(bashprompt)"
+
+# Autocomplete
+[ -f /usr/share/bash-completion/bash_completion ] && source /usr/share/bash-completion/bash_completion
 
 # Append to the history file, don't overwrite it
 shopt -s histappend
+
+# Enable fancy globbing
+shopt -s globstar
 
 # Navigation aliases
 alias pu="pushd"
@@ -26,8 +31,6 @@ alias ls="ls --color=auto"
 alias sl="ls"
 alias gerp="grep"
 alias mtr='mtr -o "LSDR WBAV"'
-alias phpvld='php -d vld.active=1 -d vld.execute=0'
-alias ag='ag --silent'
 
 # Allow sudo to use the above aliases
 alias sudo='sudo '

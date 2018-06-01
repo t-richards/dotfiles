@@ -11,6 +11,3 @@ HOST=`hostname`
 # Don't beep
 xset b off
 
-# Make Caps Lock a Control key
-setxkbmap -option ctrl:nocaps
-
