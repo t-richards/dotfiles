@@ -15,6 +15,13 @@ PS1="\$(bashprompt)"
 # Autocomplete
 [ -f /usr/share/bash-completion/bash_completion ] && source /usr/share/bash-completion/bash_completion
 
+# fzf
+[ -f /usr/share/fzf/key-bindings.bash ] && source /usr/share/fzf/key-bindings.bash
+export FZF_DEFAULT_COMMAND='rg -g ""'
+
+# hashcat
+[ -f /usr/share/doc/hashcat/extra/tab_completion/hashcat.sh ] && source /usr/share/doc/hashcat/extra/tab_completion/hashcat.sh
+
 # Append to the history file, don't overwrite it
 shopt -s histappend
 
