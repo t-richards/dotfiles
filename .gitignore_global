@@ -43,13 +43,6 @@ bower_components/
 node_modules/
 npm-debug.log
 
-# Ctags
-tags
-.tags
-TAGS
-.TAGS
-.tags_swap
-
 # Vim
 [._]*.s[a-w][a-z]
 [._]s[a-w][a-z]

@@ -2,12 +2,12 @@
 
 # Usage: apgsql
 function apgsql {
-    apg -a 1 -n 1 -m 25 -M NCL
+    pwgen --secure --ambiguous -1 25 6
 }
 
 # Usage: apgstrong
 function apgstrong {
-    apg -a 1 -n 6 -m 32 -M SNCL -r /usr/share/dict/words
+    pwgen --secure --ambiguous --capitalize --numerals --symbols -1 32 6
 }
 
 # Usage: supertouch /path/to/filename/where/parent/directories/dont/exist.txt

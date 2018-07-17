@@ -23,10 +23,10 @@ Various programs are referenced in these configs, through aliases or other
 means. The following [Arch Linux][archlinux] packages should be installed for
 everything to work properly:
 
- - apg
  - fzf
  - mtr
  - neovim
+ - pwgen
  - xorg-setxkbmap
 
 [stow]: https://www.gnu.org/software/stow/
