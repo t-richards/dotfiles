@@ -1,15 +1,5 @@
 #!/usr/bin/env bash
 
-# Usage: apgsql
-function apgsql {
-    pwgen --secure --ambiguous -1 25 6
-}
-
-# Usage: apgstrong
-function apgstrong {
-    pwgen --secure --ambiguous --capitalize --numerals --symbols -1 32 6
-}
-
 # Usage: supertouch /path/to/filename/where/parent/directories/dont/exist.txt
 function supertouch {
     if [ $# -lt 1 ]; then

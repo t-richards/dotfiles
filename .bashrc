@@ -9,8 +9,10 @@ PATH=$PATH:/sbin
 export PATH
 
 # Shell prompt
-#PS1="\n$ "
-PS1="\$(bashprompt)"
+PS1="\n\u@\[\e[1;$((31+ $(hostname | cksum | cut -c1-3) % 6))m\]\h\[\e[0m\]:\w\n$ "
+
+# Custom fancy prompt which requires other setup
+# PS1="\$(bashprompt)"
 
 # Autocomplete
 [ -f /usr/share/bash-completion/bash_completion ] && source /usr/share/bash-completion/bash_completion
