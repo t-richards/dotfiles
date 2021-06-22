@@ -12,14 +12,15 @@ export PATH
 PS1="\n\u@\[\e[1;$((31+ $(hostname | cksum | cut -c1-3) % 6))m\]\h\[\e[0m\]:\w\n$ "
 
 # Custom fancy prompt which requires other setup
-# PS1="\$(bashprompt)"
+if [ -x "$(command -v bashprompt)" ]; then
+  PS1="\$(bashprompt)"
+fi
 
 # Autocomplete
 [ -f /usr/share/bash-completion/bash_completion ] && source /usr/share/bash-completion/bash_completion
 
 # fzf
 [ -f /usr/share/fzf/key-bindings.bash ] && source /usr/share/fzf/key-bindings.bash
-export FZF_DEFAULT_COMMAND='rg -g ""'
 
 # hashcat
 [ -f /usr/share/doc/hashcat/extra/tab_completion/hashcat.sh ] && source /usr/share/doc/hashcat/extra/tab_completion/hashcat.sh
@@ -29,6 +30,11 @@ shopt -s histappend
 
 # Enable fancy globbing
 shopt -s globstar
+
+# ugh
+alias open="xdg-open"
+alias pbcopy="xclip -selection clipboard"
+alias pbpaste="xclip -selection clipboard -o"
 
 # Navigation aliases
 alias pu="pushd"
@@ -50,6 +56,7 @@ alias sudo='sudo '
 # Set default text editor for Git and other programs
 export EDITOR=vim
 export VISUAL=vim
+export AUR_PAGER=vim
 
 # Host-specific config
 HOST=`hostname`

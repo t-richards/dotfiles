@@ -1,7 +1,7 @@
 # Tom's dotfiles
 
 These are some of my configuration files for various Linux programs.
-You can install them using [GNU Stow][stow].
+You can install them using [chezmoi][chezmoi].
 
 # Getting started
 
@@ -26,8 +26,7 @@ everything to work properly:
  - fzf
  - mtr
  - neovim
- - pwgen
- - xorg-setxkbmap
+ - xorg-xset
 
-[stow]: https://www.gnu.org/software/stow/
+[chezmoi]: https://www.chezmoi.io/
 [archlinux]: https://www.archlinux.org/

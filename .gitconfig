@@ -1,11 +1,11 @@
 [user]
 	name = Tom Richards
-	useconfigonly = true
+	email = tom@tomrichards.net
 [alias]
-	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 	up = pull --rebase --autostash
 [color]
 	ui = auto
 [core]
 	excludesfile = ~/.gitignore_global
-
+[push]
+	default = current
