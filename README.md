@@ -6,15 +6,8 @@ You can install them using [chezmoi][chezmoi].
 # Getting started
 
 ```bash
-# Go to your home directory
-$ cd
-
-# Clone repo
-$ git clone https://github.com/t-richards/dotfiles.git
-$ cd dotfiles
-
-# Create symlinks for all files in this repository
-$ stow .
+# Fetch and overwrite local dotfiles using this repository
+chezmoi init t-richards --apply --ssh
 ```
 
 # Dependencies
