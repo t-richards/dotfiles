@@ -14,7 +14,7 @@ PATH=$PATH:/sbin
 export PATH
 
 # fzf
-[ -f /usr/share/fzf/key-bindings.zsh ] && source /usr/share/fzf/key-bindings.zsh
+[[ -f /usr/share/fzf/key-bindings.zsh ]] && source /usr/share/fzf/key-bindings.zsh
 
 # ugh
 alias open="xdg-open"
@@ -40,5 +40,5 @@ export EDITOR=vim
 export VISUAL=vim
 export AUR_PAGER=vim
 
-# Host-specific config
-[ -f ~/.zshrc-private ] && source ~/.zshrc-private
+# Local config
+[[ -f ~/.zshrc.local ]] && source ~/.zshrc.local

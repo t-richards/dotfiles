@@ -4,10 +4,8 @@
 # Sourced by GDM/KDM/LightDM/LXDM before window manager is launched.
 #
 
-# Host-specific config
-HOST=`hostname`
-[ -f ~/.xprofile-${HOST} ] && source ~/.xprofile-${HOST}
+# Local config
+[ -f ~/.xprofile.local ] && source ~/.xprofile.local
 
 # Don't beep
 xset b off
-
