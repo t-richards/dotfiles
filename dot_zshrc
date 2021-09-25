@@ -41,4 +41,4 @@ export VISUAL=vim
 export AUR_PAGER=vim
 
 # Local config
-[[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
+[[ -f ~/.zshrc.private ]] && source ~/.zshrc.private
